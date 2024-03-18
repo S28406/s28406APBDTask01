@@ -7,12 +7,21 @@ Console.WriteLine(FindMax(arr));
 
 static double CalculateAverage(int[] numbers)
 {
-    int sumOfNumbersChanged = 0;
+// <<<<<<< HEAD
+//     int sumOfNumbersChanged = 0;
+//     foreach (int num in numbers)
+//     {
+//         sumOfNumbersChanged += num;
+//     }
+//     return (double)sumOfNumbersChanged / numbers.Length;
+// =======
+    int sumOfNumbers = 0;
     foreach (int num in numbers)
     {
-        sumOfNumbersChanged += num;
+        sumOfNumbers += num;
     }
-    return (double)sumOfNumbersChanged / numbers.Length;
+    return (double)sumOfNumbers / numbers.Length;
+// >>>>>>> feature-new
 }
 
 static int FindMax(int[] numbers)
